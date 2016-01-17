@@ -1,0 +1,129 @@
+html {
+  background: #100a1c;
+  background: linear-gradient(45deg, #f25c5d 25%, #a10d6d);
+  color: #CD4046;
+  height: 100%;
+}
+
+#clear {
+  border: 0;
+  background: #000;
+  background: rgba(42, 50, 113, .28);
+  color: #6cacc5;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  width: 10em;
+  height: 2em;
+  transition: all .5s;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 2.5em;
+}
+
+#clear:hover {
+  background: #201e40;
+}
+
+li {
+  border: 0;
+  background-color: #303248;
+  background-color: rgba(42, 50, 113, .28);
+  color: #f25c5d;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  width: 2.5em;
+  height: 2.5em;
+  transition: all .5s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover {
+  background: #201e40;
+  box-shadow: inset rgba(0, 0, 0, 0.3) 0 5px 20px 6px;
+}
+
+li:focus {
+  outline: 0;
+}
+/* The value fade-ins that appear */
+
+li:focus:after {
+  cursor: default;
+  font-size: 100px;
+  position: absolute;
+  top: 1.5em;
+  left: 50%;
+  text-align: center;
+  opacity: 0;
+  width: 48px;
+}
+
+#wrapper {
+  background-color: #303248;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #6afcc5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  margin: 0 auto;
+  width: 10em;
+  -webkit-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  position: absolute;
+}
+
+#wrapper:before,
+#wrapper:after {
+  content: " ";
+  display: table;
+}
+
+#wrapper:after {
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  width: 10em;
+  padding: 0;
+}
+
+#screen {
+  background: linear-gradient(135deg, rgba(293, 95, 95, .8) 25%, #FD395F);
+  text-overflow: ellipsis;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 10em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.operation {
+  color: #fff;
+}
